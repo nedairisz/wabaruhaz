@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+main{
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(201, 119, 119);
+    display: grid;
+    grid-template-areas: 
+        "h h h"
+        "a a as"
+        "f f f";
+}
+.termek p{
+    padding: 5px;
+}
+
+header{
+    grid-area: h;
+    padding: 5px;
+}
+article{
+    grid-area: a;
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+}
+ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+body{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+aside{
+    background-color: rgb(236, 163, 53);
+    display: grid;
+    grid-template-rows: 40px auto 30px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+.termek {
+    background-color: rgb(240, 218, 191);
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px;
+}
+h1{
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+li{
+    margin: 5px;
+    border: 1px solid grey;
+    background-color: rgb(195, 161, 226);
+    border-radius: 3px;
+}
+footer{
+    background-color: rgb(195, 161, 226);
+    padding: 5px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+      width:100%;
+    }
+    main{
+        grid-template-columns: 1fr;
+     
+        grid-template-areas: 
+            "h"
+            "as"
+            "a"
+            "f";
+    }
+    .kep{
+        grid-template-columns: 1fr;
+    }
+    ul{
+        grid-template-columns: 1fr;
+    }
+    article{
+        grid-template-columns: 1fr;
+    }
+  }
+
+.plusz{
+   padding: 5px;
+   margin: 5px; 
+}
